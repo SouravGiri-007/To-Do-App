@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+}
+
+#root {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.todo-container {
+  background: linear-gradient(135deg, #667eea, #764ba2, #6B8DD6);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+}
+
+.todo-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background: white;
+}
+
+.add-button {
+  padding: 0.75rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
+.add-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  gap: 1rem;
+}
+
+.todo-checkbox {
+  margin: 0;
+  width: 18px;
+  height: 18px;
+}
+
+.todo-text {
+  flex: 1;
+  color: white;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.edit-button,
+.delete-button {
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+  opacity: 0.8;
+  font-size: 1.25rem;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+  opacity: 1;
+}
+
+.completed .todo-text {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.edit-form {
+  display: flex;
+  flex: 1;
+  gap: 1rem;
+}
+
+.edit-input {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background: white;
+}
+
+.save-button {
+  padding: 0.5rem 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.save-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
