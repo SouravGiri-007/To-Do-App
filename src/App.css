@@ -141,3 +141,38 @@ h1 {
 .save-button:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
+
+.todo-input,
+.edit-input {
+  flex: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background: white;
+  color: #333; /* Add this line */
+}
+
+.todo-item.completed {
+  background: rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+
+.todo-item.completed::after {
+  content: "✓";
+  position: absolute;
+  right: 10px;
+  color: #4ade80;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.todo-item.completed .todo-text {
+  text-decoration: line-through;
+  opacity: 0.6;
+  color: #a0aec0;
+}
+
+.todo-item.completed .todo-checkbox {
+  accent-color: #4ade80;
+}
